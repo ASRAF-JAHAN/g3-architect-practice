@@ -36,7 +36,7 @@
   /* banner styles */
   .banner-content{
     max-width: 800px;
-    margin: 50px auto;
+    margin: 0 auto;
     text-align: center;
   }
   .banner-title{
@@ -54,5 +54,34 @@
     background: #FF900E;
     margin-top: 30px;
     border: 0;
+    cursor:pointer;
     padding: 20px 24px;
+  }
+  .banner img{
+    margin-top: 20px;
+    width: 100%;
+  }
+  /* media quary */
+  /* small or mobile device */
+  @media screen and (max-width:576px){
+    .nav-title{
+        flex-direction: column;
+        padding: 0 auto;
+    }
+    header{
+        padding: 10px;
+    }
+    nav li{
+        margin-left: 10px;
+        margin-right:10px;
+    }
+  }
+  /* medium device */
+  @media screen and (min-width:576px) and (max-width:960px){
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
   }
