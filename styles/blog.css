@@ -102,11 +102,49 @@
     font-size: 2.9rem;
     font-weight: 700;
   }
+  /* feature section */
+  /* facts section */
+  .facts-title{
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .facts-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .features-card-container{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: ;
+  }
+  .features-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 30px;
+  }
+  .card-stats{
+    color: #424242;
+    font-size:2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .card-title{
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
   /* media quary */
   /* small or mobile device */
   @media screen and (max-width:576px){
     .nav-title,
-    .team-work
+    .team-work,
+    .features-card-container
     {
         flex-direction: column;
         padding: 0 auto;
@@ -121,9 +159,8 @@
     .team-img{
       grid-template-columns: 1fr;
     }
-    .team-content{
-      padding-left: 30px;
-      padding-right:30px;
+    .features-card-container .card{
+      padding: 10px 10px;
     }
   }
   /* medium device */
