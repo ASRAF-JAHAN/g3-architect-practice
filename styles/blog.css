@@ -61,25 +61,10 @@
     margin-top: 20px;
     width: 100%;
   }
-  /* media quary */
-  /* small or mobile device */
-  @media screen and (max-width:576px){
-    .nav-title{
-        flex-direction: column;
-        padding: 0 auto;
-    }
-    header{
-        padding: 10px;
-    }
-    nav li{
-        margin-left: 10px;
-        margin-right:10px;
-    }
-  }
   /* features section work */
   main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
   }
   .team-work{
     display: flex;
@@ -117,13 +102,36 @@
     font-size: 2.9rem;
     font-weight: 700;
   }
-  
+  /* media quary */
+  /* small or mobile device */
+  @media screen and (max-width:576px){
+    .nav-title,
+    .team-work
+    {
+        flex-direction: column;
+        padding: 0 auto;
+    }
+    header{
+        padding: 10px;
+    }
+    nav li{
+        margin-left: 10px;
+        margin-right:10px;
+    }
+    .team-img{
+      grid-template-columns: 1fr;
+    }
+    .team-content{
+      padding-left: 30px;
+      padding-right:30px;
+    }
+  }
   /* medium device */
   @media screen and (min-width:576px) and (max-width:960px){
     header{
         padding: 50px;
     }
-    nav{
+    nav,.team-work{
         flex-direction: column;
     }
   }
